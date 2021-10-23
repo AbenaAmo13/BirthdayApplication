@@ -69,7 +69,15 @@ export default class DemoBook extends React.Component {
                         </p>
 
                     </div>
-                    <div className="demoPage"> on this faith journey with me. </div>
+                    <div className="demoPage">
+
+
+                        <p className="reasonBody">
+                            on this faith journey with me.
+                            Over the past few years as I have matured and gotten to know you more, I am hundred percent proud to have you as my mentor and my mother and on this your special day,
+                            I continue to pray that you continue to grow in your relationship with God and get to fulfil all that he has purposed for you!
+                        </p>
+                    </div>
                     <div className="demoPage">Page 4</div>
 
                 </HTMLFlipBook>
