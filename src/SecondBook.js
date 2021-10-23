@@ -1,7 +1,7 @@
 import React  from "react";
 import HTMLFlipBook from 'react-pageflip';
 import {AppBar, Button, styled, Toolbar, Typography} from "@mui/material";
-
+import churchPic from "./churchpic.jpeg"
 const Offset = styled("div")(({
                                   theme
                               })=>theme.mixins.toolbar);
@@ -48,11 +48,28 @@ export default class DemoBook extends React.Component {
                 >
 
                     <div className="demoPage" id="coverPageBook"></div>
-                    <div className="demoPage">Page 2
+                    <div className="demoPage">
+                        <div>
+                            <img src={churchPic} height="40%" width="100%">
 
+                            </img>
+
+                        </div>
+
+
+
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 1: You are the most God centered woman I know
+                        </Typography>
+
+                        <p className="reasonBody">
+                            I love the way you put God at the center of everything. Your desire to know, please and obey him is super admirable.
+                            Even though as humans we aren't perfect, you continue to strive for to improve in your faith walk and I am super blessed to have a mother
+                            who is going
+                        </p>
 
                     </div>
-                    <div className="demoPage">Page 3</div>
+                    <div className="demoPage"> on this faith journey with me. </div>
                     <div className="demoPage">Page 4</div>
 
                 </HTMLFlipBook>

@@ -1,6 +1,11 @@
 
 .demoPage{
-  background-color: lightsalmon!important;
+  background-color: lightpink!important;
+}
+
+.reasonBody{
+font-size: large;
+  line-height: 1.6;
 }
 .secondbookdiv{
   position:absolute;
@@ -20,6 +25,11 @@
 
 }
 
+.reasonTitles{
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold!important;
+}
 #coverPageBook{
   background-image: url("bookcover.png");
   background-size: 95px;
