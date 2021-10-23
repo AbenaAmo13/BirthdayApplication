@@ -1,7 +1,17 @@
 import HTMLFlipBook from 'react-pageflip';
 import React from "react";
 import coverpicture from './coverpage.jpeg'
-import {Paper,Button, CardActionArea, CardActions, CardContent, CardMedia, Typography, Card} from "@mui/material";
+import {
+    Paper,
+    Button,
+    CardActionArea,
+    CardActions,
+    CardContent,
+    CardMedia,
+    Typography,
+    Card,
+    AppBar, Toolbar
+} from "@mui/material";
 
 const Page = React.forwardRef((props, ref) => {
     return (
@@ -16,39 +26,39 @@ const Page = React.forwardRef((props, ref) => {
 function MyBook(props) {
     return (
         <div>
+            <AppBar>
+                <Toolbar>
+                    HAppy birthday Mummy
 
-            <HTMLFlipBook width={300} height={500} className="App">
+                </Toolbar>
 
-                <Paper className="demoPage">
-                    <Card>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="coverpicture"
-                                alt="green iguana"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    HAPPY BIRTHDAY MUMMY!!!
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    This web book was created by me to show you how much I love you. There are million reasons why I love you but let me start with 10
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                            </Button>
-                        </CardActions>
-                    </Card>
+            </AppBar>
+
+            <HTMLFlipBook
+                width={550} // base page width
+            height={733} // base page height
+
+            size={"stretch"}
+            // set threshold values:
+            minWidth={315}
+            maxWidth={1000}
+            minHeight={1000}
+                maxHeight={1350}
+                maxShadowOpacity={0.5}
+                showCover={true}
+                mobileScrollSupport={false}
 
 
-                </Paper>
+                className="App">
+
+                <div className="demoPage"> First Page
 
 
-                <Paper className="demoPage">Dora the explorer</Paper>
+
+                </div>
+
+
+                <div className="demoPage">Dora the explorer</div>
                 <div className="demoPage">Harry styles</div>
                 <div className="demoPage">BTS</div>
             </HTMLFlipBook>

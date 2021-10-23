@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import {Component} from "react";
 import MainMenu from "./MainMenu";
+import MyBook from "./MyBook";
+
 
 
 export default class App extends Component{
@@ -31,7 +33,11 @@ export default class App extends Component{
         }
         else if(this.getCurrentPage() === 1){
             return (
-                <div>Hey</div>
+
+                    <MyBook>
+
+                    </MyBook>
+
             )
         }}
 
