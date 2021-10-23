@@ -50,10 +50,6 @@ function MyBook(props) {
                         Timeline to 47
                     </i>
 
-
-
-
-
                 </Toolbar>
 
             </AppBar>

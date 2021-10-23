@@ -11,6 +11,15 @@
 
 }
 
+#coverPageBook{
+  background-image: url("bookcover.png");
+  background-size: 110px;
+
+}
+
+.navbarbutton{
+
+}
 #readbutton{
   color: purple!important;
 }

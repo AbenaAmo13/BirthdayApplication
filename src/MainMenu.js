@@ -1,5 +1,6 @@
 import HTMLFlipBook from "react-pageflip";
 import bookcover from './bookcover.png'
+import thirdcover from './thirdcardcover.jpg'
 import {
     AppBar,
     Button,
@@ -21,10 +22,16 @@ export default class MainMenu extends Component{
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this)
+        this.handleClickVideoCard = this.handleClickVideoCard.bind(this)
+
     }
 
     handleClick(e){
         this.props.handleClick(1)
+    }
+
+    handleClickVideoCard(e){
+        this.props.handleClick(2)
     }
 
     render() {
@@ -70,7 +77,6 @@ export default class MainMenu extends Component{
                         </CardContent>
                     </CardActionArea>
 
-
                 </Card >
 
 
@@ -103,6 +109,34 @@ export default class MainMenu extends Component{
                     </CardActions>
 
                 </Card>
+
+
+                <Card className="secondCard">
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            image={thirdcover}
+                            alt="green iguana"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+
+                            </Typography>
+                            <p className="introtext" variant="body2" color="text.secondary">
+                                In this section, there is a sweet video message from the people that you love as well as a timeline of your life so far!
+                                Click the Go to page button to feel the love from your family members.
+                            </p>
+
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Button id="readbutton" size="small" color="primary" onClick={this.handleClickVideoCard}>
+                            Go to page
+                        </Button>
+                    </CardActions>
+
+                </Card>
+
 
 
             </div>

@@ -3,6 +3,8 @@ import './App.css';
 import {Component} from "react";
 import MainMenu from "./MainMenu";
 import MyBook from "./MyBook";
+import SecondBook from "./SecondBook"
+import VideoCard from "./VideoCard"
 
 
 
@@ -13,8 +15,14 @@ export default class App extends Component{
             currentPage: 0
         }
         this.handleClick = this.handleClick.bind(this)
+
+
     }
     handleClick = (newPage) => {
+        this.setState({currentPage: newPage});
+    }
+
+    handleClickVideoCard = (newPage)=>{
         this.setState({currentPage: newPage});
     }
 
@@ -26,19 +34,24 @@ export default class App extends Component{
 
         if (this.getCurrentPage() === 0){
             return(
-                <MainMenu currentPage={this.state.currentPage} handleClick={this.handleClick}>
+                <MainMenu currentPage={this.state.currentPage} handleClick={this.handleClick} handleClickVideoCard = {this.handleClickVideoCard}>
 
                 </MainMenu>
             )
         }
-        else if(this.getCurrentPage() === 1){
+        else if(this.getCurrentPage() === 1) {
             return (
+                <SecondBook></SecondBook>
 
-                    <MyBook>
-
-                    </MyBook>
 
             )
+        }
+        else if(this.getCurrentPage() === 2){
+                return (
+
+                  <VideoCard></VideoCard>
+
+                )
         }}
 
 
