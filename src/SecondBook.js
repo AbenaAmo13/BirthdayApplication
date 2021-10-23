@@ -12,11 +12,14 @@ export default class DemoBook extends React.Component {
     render() {
         return (
 
-            <div>
+            <div className="secondbookdiv" >
                 <AppBar>
                     <Toolbar>
                         <Button variant="contained" size="small">
-                            Next Present...
+                            Back
+                        </Button>
+                        <Button variant="contained" size="small">
+                            Next
                         </Button>
 
 
@@ -28,7 +31,7 @@ export default class DemoBook extends React.Component {
 
                 <HTMLFlipBook
                     width={550}
-                    height={733}
+                    height={1100}
                     size="stretch"
                     minWidth={315}
                     maxWidth={1000}

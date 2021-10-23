@@ -2,7 +2,16 @@
 .demoPage{
   background-color: lightsalmon!important;
 }
+.secondbookdiv{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:100%;
+  width:100%;
 
+}
 .MainMenu {
   display: flex;
   flex-direction: column;
@@ -13,7 +22,7 @@
 
 #coverPageBook{
   background-image: url("bookcover.png");
-  background-size: 110px;
+  background-size: 95px;
 
 }
 
