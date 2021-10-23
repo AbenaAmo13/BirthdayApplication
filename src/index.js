@@ -7,6 +7,7 @@ import { createTheme } from '@mui/material/styles';
 import {red, grey} from '@mui/material/colors';
 import {ThemeProvider} from "@emotion/react";
 
+
 const theme = createTheme({
     palette: {
         primary: {
@@ -17,6 +18,9 @@ const theme = createTheme({
         },
     },
 });
+
+
+
 ReactDOM.render(
   <React.StrictMode>
       <ThemeProvider theme={theme}>

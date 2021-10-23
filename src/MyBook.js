@@ -1,6 +1,8 @@
 import HTMLFlipBook from 'react-pageflip';
+import FlipPage from 'react-flip-page'
 import React from "react";
-import coverpicture from './coverpage.jpeg'
+import bookcover from './bookcover.png'
+
 import {
     Paper,
     Button,
@@ -10,8 +12,11 @@ import {
     CardMedia,
     Typography,
     Card,
-    AppBar, Toolbar
+    Grid,
+    AppBar, Toolbar, styled
 } from "@mui/material";
+
+
 
 const Page = React.forwardRef((props, ref) => {
     return (
@@ -23,45 +28,62 @@ const Page = React.forwardRef((props, ref) => {
     );
 });
 
+
+const Offset = styled("div")(({
+                                  theme
+                              })=>theme.mixins.toolbar);
+
+
 function MyBook(props) {
     return (
         <div>
             <AppBar>
                 <Toolbar>
-                    HAppy birthday Mummy
+                    <i variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        Video Messages
+                    </i>
+
+                    <i variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                       10 Reasons Why
+                    </i>
+                    <i variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        Timeline to 47
+                    </i>
+
+
+
+
 
                 </Toolbar>
 
             </AppBar>
-
-            <HTMLFlipBook
-                width={550} // base page width
-            height={733} // base page height
-
-            size={"stretch"}
-            // set threshold values:
-            minWidth={315}
-            maxWidth={1000}
-            minHeight={1000}
-                maxHeight={1350}
-                maxShadowOpacity={0.5}
-                showCover={true}
-                mobileScrollSupport={false}
+            <Offset/>
 
 
-                className="App">
+                    <FlipPage showSwipeHint={true} className={'book'}   >
 
-                <div className="demoPage"> First Page
+                                <img src={bookcover}>
+                                </img>
 
 
 
-                </div>
+                            <article>
+                                <Card>
+                                    <CardMedia>
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="div">
+                                                Reason 1: You are the most God centered woman I know
+                                            </Typography>
+                                            <Typography variant="body2" color="text.secondary">
+                                                Mummy, you are the most God centered person I know. Your desire to grow in Him and obey him is super inspirational. You continue to display the love of God in not only my life but in the life of others.
+                                            </Typography>
+                                        </CardContent>
+                                    </CardMedia>
+                                </Card>
+                            </article>
 
 
-                <div className="demoPage">Dora the explorer</div>
-                <div className="demoPage">Harry styles</div>
-                <div className="demoPage">BTS</div>
-            </HTMLFlipBook>
+                    </FlipPage>
         </div>
     );
 }

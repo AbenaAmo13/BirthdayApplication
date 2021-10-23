@@ -11,8 +11,38 @@
 
 }
 
+#readbutton{
+  color: purple!important;
+}
 
+.coverPage{
 
+}
+.listitems, .introtext{
+  line-height: 1.6;
+  font-size: larger;
+  text-color: grey;
+}
+.secondCard{
+  margin-top: 10% ;
+}
+
+.firstCard{
+
+}
+
+.article1{
+  background-image: url("bookcover.png");
+}
 AppBar{
-position:fixed;
+position:sticky;
+}
+
+
+.book{
+
+  width: 100%!important;
+  border-radius: 40px;
+  background-image: url("bookcover.png");
+
 }
