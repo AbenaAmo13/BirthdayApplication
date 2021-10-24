@@ -22,19 +22,18 @@ export default class App extends Component{
         this.setState({currentPage: newPage});
     }
 
-    handleClickVideoCard = (newPage)=>{
-        this.setState({currentPage: newPage});
-    }
+
 
     getCurrentPage(){
         return this.state.currentPage
     }
 
     render() {
+        console.log(this.getCurrentPage())
 
         if (this.getCurrentPage() === 0){
             return(
-                <MainMenu currentPage={this.state.currentPage} handleClick={this.handleClick} handleClickVideoCard = {this.handleClickVideoCard}>
+                <MainMenu currentPage={this.state.currentPage} handleClick={this.handleClick} >
 
                 </MainMenu>
             )
@@ -48,6 +47,7 @@ export default class App extends Component{
         }
         else if(this.getCurrentPage() === 2){
                 return (
+
 
                   <VideoCard></VideoCard>
 
