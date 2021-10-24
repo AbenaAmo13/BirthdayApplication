@@ -90,7 +90,7 @@ export default class  VideoCard extends React.Component {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Ewura Birthday Message Part 1
+                            Ewura's Birthday Message Part 1
                         </Typography>
                     </CardContent>
 
@@ -106,7 +106,7 @@ export default class  VideoCard extends React.Component {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Ewura Birthday Message Part 2
+                            Ewura's Birthday Message Part 2
                         </Typography>
                     </CardContent>
 
@@ -139,7 +139,7 @@ export default class  VideoCard extends React.Component {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Aunty Rose Birthday Messsage
+                            Aunty Rose's Birthday Messsage
                         </Typography>
                     </CardContent>
 
@@ -155,7 +155,7 @@ export default class  VideoCard extends React.Component {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Aunty Rose Birthday Messsage
+                            Aunty Rose's Birthday Messsage
                         </Typography>
                     </CardContent>
 
