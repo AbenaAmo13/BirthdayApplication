@@ -62,14 +62,14 @@ export default class MainMenu extends Component{
                                 This mini web-application was made to show how much I love you. You mean everything to me and though I am not there I intend to show you just how much you mean to me. I love you so much!!!
                             </p>
                             <p  className="introtext" variant="body2" color="text.secondary">
-                                In this web application there will be three cards below:
+                                In this web application there will be two cards below:
                             </p>
                             <ul className="listitems">
                                 <li>
-                                    The second card will take you my book 10 Reasons Why
+                                    The second card will take you my love book 10 Reasons Why
                                 </li>
                                 <li>
-                                    The third Book will take you to a place filled with video messages.
+                                    The third card will take you to a place filled with video messages and bonus presents.
                                 </li>
                             </ul>
                         </CardContent>

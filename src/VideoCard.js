@@ -167,7 +167,7 @@ export default class  VideoCard extends React.Component {
                     </CardMedia>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Playlist of gospel songs that you like.
+                            Playlist of gospel songs that you love.
                         </Typography>
                     </CardContent>
                 </Card>
