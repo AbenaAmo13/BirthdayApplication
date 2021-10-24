@@ -1,6 +1,10 @@
-import {AppBar, Button, styled, Toolbar} from "@mui/material";
+import {AppBar, Button, styled, Toolbar, Card, CardMedia, CardActionArea, CardContent, Typography, CardActions} from "@mui/material";
 import React from "react";
-
+import abimessage from "./abimessage.mp4"
+import ewuraone from "./ewurabdaymessage1.mp4"
+import ewuratwo from "./ewurabdaymessage2.mp4"
+import abena from "./abenavideo2.mp4"
+import auntyrose from "./auntyrose.mp4"
 
 
 const Offset = styled("div")(({
@@ -37,6 +41,88 @@ export default class  VideoCard extends React.Component {
                     </div>
                 </Toolbar>
             </AppBar>
+
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"
+                        image={abimessage}
+                        alt="Abi message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Abi's Birthday Message
+                        </Typography>
+                    </CardContent>
+
+                </Card>
+
+                <Card width="100%" classname="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"
+                        image={ewuraone}
+                        alt="Abi message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Ewura Birthday Message Part 1
+                        </Typography>
+                    </CardContent>
+
+                </Card>
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"
+                        image={ewuratwo}
+                        alt="Abi message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Ewura Birthday Message Part 2
+                        </Typography>
+                    </CardContent>
+
+                </Card>
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"
+                        image={abena}
+                        alt="Abena's message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Abena's Birthday Message
+                        </Typography>
+                    </CardContent>
+
+                </Card>
+
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"
+                        image={auntyrose}
+                        alt="Abena's message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Aunty Rose Birthday Messsage
+                        </Typography>
+                    </CardContent>
+
+                </Card>
 
         </div>
         );

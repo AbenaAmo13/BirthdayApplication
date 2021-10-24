@@ -1,6 +1,7 @@
 import HTMLFlipBook from "react-pageflip";
 import bookcover from './bookcover.png'
 import thirdcover from './thirdcardcover.jpg'
+
 import {
     AppBar,
     Button,
@@ -65,13 +66,10 @@ export default class MainMenu extends Component{
                             </p>
                             <ul className="listitems">
                                 <li>
-                                    The first card would take you to a mini book called 10 Reasons Why
+                                    The second card will take you my book 10 Reasons Why
                                 </li>
                                 <li>
-                                    The Second card would take you to a birthday video message.
-                                </li>
-                                <li>
-                                    The last one will take you to a slide show of you over the years and a special gift.
+                                    The third Book will take you to a place filled with video messages.
                                 </li>
                             </ul>
                         </CardContent>
@@ -98,6 +96,7 @@ export default class MainMenu extends Component{
                             </p>
                             <p  className="introtext" variant="body2" color="text.secondary">
                                 There are million reasons why I love you but since that will take eternity for me to detail them all, I'll start with 10. Click the read button to read the reasons why I love you
+                                in my book called 10 Reasons Why
                             </p>
 
                         </CardContent>
@@ -123,8 +122,7 @@ export default class MainMenu extends Component{
 
                             </Typography>
                             <p className="introtext" variant="body2" color="text.secondary">
-                                In this section, there is a sweet video message from the people that you love as well as a timeline of your life so far!
-                                Click the Go to page button to feel the love from your family members.
+                                In this section, there is a sweet video message from the people that love you. Go watch the videos and feel the love
                             </p>
 
                         </CardContent>
