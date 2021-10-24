@@ -204,7 +204,7 @@ export default class DemoBook extends React.Component {
                             who I can have genuine good laughs withs and brings me so much joy.
                         </p>
                         <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
-                            Reason 6: You take responsibility for your life.
+                            Reason 7: You take responsibility for your life.
                         </Typography>
 
                         <p className="reasonBody">
@@ -215,7 +215,7 @@ export default class DemoBook extends React.Component {
                             so I am happy to have learnt it from you.
                         </p>
                         <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
-                            Reason 7: You are an incredible giver
+                            Reason 8.1: You are an incredible giver
                         </Typography>
 
                         <p className="reasonBody">
@@ -234,7 +234,7 @@ export default class DemoBook extends React.Component {
                         </p>
 
                         <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
-                            Reason 8: You are an exceptional cook
+                            Reason 8.2: You are an exceptional cook
                         </Typography>
                         <div>
                             <img src={cook} width="100%" height="20%">
