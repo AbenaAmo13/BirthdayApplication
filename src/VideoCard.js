@@ -6,6 +6,7 @@ import ewuratwo from "./ewurabdaymessage2.mp4"
 import abena from "./abenavideo2.mp4"
 import auntyrose from "./auntyrose.mp4"
 import nana from "./nanabdaymessage.mp4"
+import ReactPlayer from 'react-player/youtube'
 
 
 const Offset = styled("div")(({
@@ -144,8 +145,51 @@ export default class  VideoCard extends React.Component {
 
                 </Card>
 
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"
+                        image={auntyrose}
+                        alt="Abena's message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Aunty Rose Birthday Messsage
+                        </Typography>
+                    </CardContent>
 
-        </div>
+                </Card>
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia>
+                        <ReactPlayer url='https://www.youtube.com/playlist?list=PLgtwbzCvB4xe-4DZiP3dMipKm0sN6je-v' />
+                    </CardMedia>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Playlist of gospel songs that you like.
+                        </Typography>
+                    </CardContent>
+                </Card>
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia>
+                        <ReactPlayer url='https://www.youtube.com/playlist?list=PLgtwbzCvB4xcsYaZRx-hQtbRzs2Hqzxe5' />
+                    </CardMedia>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Special Gospel birthday playlist, Your professor made just for you.
+                        </Typography>
+                    </CardContent>
+                </Card>
+
+
+
+
+
+
+
+            </div>
         );
 
 
