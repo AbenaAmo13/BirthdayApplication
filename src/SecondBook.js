@@ -7,11 +7,26 @@ import abena from "./abena.jpeg"
 import humnle from "./humble.jpeg"
 import funny from "./funny.jpeg"
 import strong from "./strong.jpeg"
+import cook from "./cook.jpeg"
 const Offset = styled("div")(({
                                   theme
                               })=>theme.mixins.toolbar);
 export default class DemoBook extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.handleClickSecond = this.handleClickSecond.bind(this)
+        this.handleClickVideoCard = this.handleClickVideoCard.bind(this)
+
+    }
+
+    handleClickSecond(e){
+        this.props.handleClick(0)
+    }
+
+    handleClickVideoCard(e){
+        this.props.handleClick(2)
+    }
 
 
     render() {
@@ -20,16 +35,15 @@ export default class DemoBook extends React.Component {
             <div className="secondbookdiv" >
                 <AppBar>
                     <Toolbar>
-                        <Button variant="contained" size="small">
-                            Back
-                        </Button>
-                        <Button variant="contained" size="small">
-                            Next
-                        </Button>
+                        <div className="bardisplay">
+                            <Button variant="contained" size="small" onClick={this.handleClickSecond}>
+                                Menu
+                            </Button>
+                            <Button variant="contained" size="small" className ="video" onClick={this.handleClickVideoCard}>
+                                Videos
+                            </Button>
 
-
-
-
+                        </div>
                     </Toolbar>
                 </AppBar>
                 <Offset/>
@@ -213,12 +227,64 @@ export default class DemoBook extends React.Component {
 
                     </div>
                     <div className="demoPage">
-                        <p className="demoPage">
+                        <p className="reasonBody">
                             You give so much to ENAS, to the church, and to other people's children so much so that they never want to leave
                             our house when they come around. Your love sees no bounds and  I can only aspire to have the caring and
                             giving nature that you possess.
                         </p>
 
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 8: You are an exceptional cook
+                        </Typography>
+                        <div>
+                            <img src={cook} width="100%" height="20%">
+                            </img>
+                        </div>
+
+                    </div>
+                    <div className="demoPage">
+                        <p className="reasonBody">
+                           There are million other reasons why I love you but you being able to cook so exceptionally
+                            is the icing on an already perfectly baked cake. Your fufu and groundnut food is the best
+                            of all time and honestly deserves its own chop bar. Maa doesn't need Mckeown with your fufu in town!
+                        </p>
+
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 9: You are honest with those you love
+                        </Typography>
+                        <p className="reasonBody">
+                          I love the way you are honest with those you love. The way you correct us when we are doing something wrong.
+                            Or when you tell me to dress nicely cause if I don't it would rob me off opportunities.
+                            You are never afraid to tell me as it is and I love that cause I know that you have my best interest at heart
+                            and as a result of this, I trust you with my entire life.
+                            Another thing is, you practice honesty with wisdom. You know when it is necessary to say certain things
+                            and when the time isn't right and that quality together with the favour of God has brought you thus far and
+                            I know that it will continue to reap blessings into your life.
+                        </p>
+
+
+
+
+                    </div>
+
+                    <div className="demoPage">
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 10: I love you because you are you.
+                        </Typography>
+                        <p className="reasonBody">
+                            At this point of my life, I just love everything about you. Your good, your bad, and everything in between. There is nothing
+                            absolutely nothing you can do to make me not love you because I trust you with my life. I know you have my best interest at heart
+                            and I am completely safe in you. There is nothing you can do to ever let me down or take my love for you because from now till the
+                            end of my life I love you because you are YOU and I will spend the rest of my life proving it to you.
+
+
+                        </p>
+
+                        <p className="reasonBody" id="lovealways">
+                            Love Always,<br></br>
+
+                                Your Professor
+                        </p>
                     </div>
 
 

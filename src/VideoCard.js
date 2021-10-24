@@ -1,4 +1,4 @@
-import {AppBar, styled, Toolbar} from "@mui/material";
+import {AppBar, Button, styled, Toolbar} from "@mui/material";
 import React from "react";
 
 
@@ -6,35 +6,42 @@ import React from "react";
 const Offset = styled("div")(({
                                   theme
                               })=>theme.mixins.toolbar);
-function VideoCard(){
-    return(
-        <div>
+export default class  VideoCard extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this)
+        this.handleClickBook = this.handleClickBook.bind(this)
+    }
+
+    handleClick(e) {
+        this.props.handleClick(0)
+    }
+
+    handleClickBook(e) {
+        this.props.handleClick(1)
+    }
+
+    render() {
+        return (<div>
             <AppBar>
                 <Toolbar>
-                    <i variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Video Messages
-                    </i>
+                    <div className="bardisplay">
+                        <Button variant="contained" size="small" onClick={this.handleClick}>
+                            Menu
+                        </Button>
+                        <Button variant="contained" size="small" className ="video" onClick={this.handleClickBook}>
+                            10 Reasons Why
 
-                    <i variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        10 Reasons Why
-                    </i>
-                    <i variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Timeline to 47
-                    </i>
+                        </Button>
 
-
-
-
-
+                    </div>
                 </Toolbar>
-
             </AppBar>
-            <Offset/>
+
         </div>
-    )
+        );
 
 
-
+    }
 }
 
-export default VideoCard;

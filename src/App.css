@@ -2,7 +2,17 @@
 .demoPage{
   background-color: lightpink!important;
 }
+#lovealways{
+  font-weight: bolder;
 
+}
+
+.video{
+  margin-left: 10% !important;
+}
+.bardisplay{
+  display: flex;
+}
 .reasonBody{
 font-size: large;
   line-height: 1.6;

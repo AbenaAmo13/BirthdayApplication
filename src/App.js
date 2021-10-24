@@ -15,10 +15,18 @@ export default class App extends Component{
             currentPage: 0
         }
         this.handleClick = this.handleClick.bind(this)
+        this.handleClickSecond = this.handleClickSecond.bind(this)
+        this.handleClickBook = this.handleClickBook.bind(this)
 
 
     }
     handleClick = (newPage) => {
+        this.setState({currentPage: newPage});
+    }
+    handleClickSecond = (newPage) => {
+        this.setState({currentPage: newPage});
+    }
+    handleClickBook = (newPage) => {
         this.setState({currentPage: newPage});
     }
 
@@ -39,8 +47,10 @@ export default class App extends Component{
             )
         }
         else if(this.getCurrentPage() === 1) {
+
             return (
-                <SecondBook></SecondBook>
+                <SecondBook handleClick={this.handleClickSecond}></SecondBook>
+
 
 
             )
@@ -49,7 +59,7 @@ export default class App extends Component{
                 return (
 
 
-                  <VideoCard></VideoCard>
+                  <VideoCard handleClick={this.handleClickBook}></VideoCard>
 
                 )
         }}
