@@ -5,6 +5,7 @@ import churchPic from "./churchpic.jpeg"
 import enaspic from "./enaspic.png"
 import abena from "./abena.jpeg"
 import humnle from "./humble.jpeg"
+import funny from "./funny.jpeg"
 import strong from "./strong.jpeg"
 const Offset = styled("div")(({
                                   theme
@@ -92,7 +93,7 @@ export default class DemoBook extends React.Component {
                             The detail, the energy, the sacrifice, the quality of all that you do and your character is one of a kind
                             and you are my topmost example of Love not in words only but in deed.
                         </p>
-                        <img src={abena} height="40%" width="100%">
+                        <img src={abena} height="30%" width="100%">
 
                         </img>
                     </div>
@@ -129,7 +130,7 @@ export default class DemoBook extends React.Component {
 
 
                         <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
-                            Reason 4: You are incredibly humbled
+                            Reason 4: You are incredibly humble
                         </Typography>
                         <p>
                             Tap right /Swipe to continue...
@@ -175,6 +176,48 @@ export default class DemoBook extends React.Component {
                         <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
                             Reason 6: You are one of the funniest people I know
                         </Typography>
+                        <div>
+                            <img src={funny} height="40%" width="100%"></img>
+                        </div>
+                        <p className="reasonBody">
+                            As I've grown, I've realised that you are so
+                        </p>
+                    </div>
+
+                    <div className="demoPage">
+                        <p className="reasonBody">
+                            super funny. Honestly, you get funnier every year.I'm so blessed to have a mother
+                            who I can have genuine good laughs withs and brings me so much joy.
+                        </p>
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 6: You take responsibility for your life.
+                        </Typography>
+
+                        <p className="reasonBody">
+                            You always tell me that in life, you never blame others but always see where you faulted and try and improve
+                            and I love that about you. You always want to see how you can solve the situation rather than
+                            thinking things are hopeless but you also know when to  let things go when there is nothing you
+                            can do about it. I have picked this character from you and It has changed the game for me
+                            so I am happy to have learnt it from you.
+                        </p>
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 7: You are an incredible giver
+                        </Typography>
+
+                        <p className="reasonBody">
+                            I have seen you give so much of yourself to everyone around you. The way you have given
+                            to me and my sisters alone is great that I can't express how grateful and thankful
+                            I am to be blessed with the best mother in the entire universe. (Tap right (Swipe) to
+                            continue
+                        </p>
+
+                    </div>
+                    <div className="demoPage">
+                        <p className="demoPage">
+                            You give so much to ENAS, to the church, and to other people's children so much so that they never want to leave
+                            our house when they come around. Your love sees no bounds and  I can only aspire to have the caring and
+                            giving nature that you possess.
+                        </p>
 
                     </div>
 
