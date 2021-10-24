@@ -5,6 +5,7 @@ import churchPic from "./churchpic.jpeg"
 import enaspic from "./enaspic.png"
 import abena from "./abena.jpeg"
 import humnle from "./humble.jpeg"
+import strong from "./strong.jpeg"
 const Offset = styled("div")(({
                                   theme
                               })=>theme.mixins.toolbar);
@@ -142,11 +143,42 @@ export default class DemoBook extends React.Component {
                             </img>
 
                         </div>
-                        <p>
-                            Tap right /Swipe to continue...
+                        <p className="reasonBody">
+                            Your humility is so admirable! I have seen you go through the toughest challenges with such grace and humility that I didn't know
+                            one could have in those circumstance. The way you handled everything with Daddy, the level of humility you have with dealing with parent,
+                            teachers, and the people you encounter is one to be modeled. I aspire to have that level
                         </p>
+                    </div>
+                    <div className="demoPage">
+                        <p className="reasonBody">
+                            of humility. Because of you, I have learnt that approach is everything and I am forever grateful for that lesson.
+                        </p>
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 5: You are the strongest person I know
+                        </Typography>
+                        <div>
+                        <img src={strong} width="100%" height="40%">
+                        </img>
+                        </div>
+                        <p className="reasonBody">
+                            Tap right/swipe right to continue...
+                        </p>
+                    </div>
+
+                    <div className="demoPage">
+                        <p className="reasonBody">
+                            You have gone through so much but still the smile on your face prevails. You still exude so much life and positive energy
+                            so much so that everyone loves being around you. You have such a persevering spirit and let nothing bring you down.
+                            Even in hard moments when you feel down, you never let it keep you down and that is quality that is rare to find. I pray that
+                            you continue to get stronger and better everyday through the spirit of God for the rest of your life!
+                        </p>
+                        <Typography gutterBottom variant="h5" component="div" className="reasonTitles">
+                            Reason 6: You are one of the funniest people I know
+                        </Typography>
 
                     </div>
+
+
 
                 </HTMLFlipBook>
 
