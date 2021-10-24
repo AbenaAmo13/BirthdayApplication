@@ -145,21 +145,7 @@ export default class  VideoCard extends React.Component {
 
                 </Card>
 
-                <Card width="100%" className="bdayvideos">
-                    <CardMedia
-                        component="video"
-                        height="140"
-                        image={auntyrose}
-                        alt="Abena's message"
-                        controls
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Aunty Rose's Birthday Messsage
-                        </Typography>
-                    </CardContent>
 
-                </Card>
 
                 <Card width="100%" className="bdayvideos">
                     <CardMedia>
