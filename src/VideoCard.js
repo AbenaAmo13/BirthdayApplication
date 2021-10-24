@@ -5,6 +5,7 @@ import ewuraone from "./ewurabdaymessage1.mp4"
 import ewuratwo from "./ewurabdaymessage2.mp4"
 import abena from "./abenavideo2.mp4"
 import auntyrose from "./auntyrose.mp4"
+import nana from "./nanabdaymessage.mp4"
 
 
 const Offset = styled("div")(({
@@ -58,6 +59,25 @@ export default class  VideoCard extends React.Component {
                     </CardContent>
 
                 </Card>
+
+                <Card width="100%" className="bdayvideos">
+                    <CardMedia
+                        component="video"
+                        height="140"a
+                        image={nana}
+                        alt="Abena's message"
+                        controls
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Nana's Birthday Message
+                        </Typography>
+                    </CardContent>
+
+                </Card>
+
+
+
 
                 <Card width="100%" classname="bdayvideos">
                     <CardMedia
@@ -123,6 +143,7 @@ export default class  VideoCard extends React.Component {
                     </CardContent>
 
                 </Card>
+
 
         </div>
         );
